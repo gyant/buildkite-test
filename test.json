@@ -31,6 +31,9 @@
       "ssh_username": "ec2-user",
       "ssh_agent_auth": "true",
       "ssh_keypair_name": "deployer-key",
+      "security_group_ids": [
+        "sg-016328e75c78be0b4"
+      ],
       "tags": {
         "Name": "ami-builder-image",
         "created": "{{timestamp}}"
