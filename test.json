@@ -27,6 +27,13 @@
         ],
         "most_recent": true
       },
+      "subnet_filter": {
+        "filters": {
+          "tag:Class": "build-private"
+        },
+        "most_free": true,
+        "random": false
+      },
       "ssh_timeout": "3m",
       "ssh_username": "ec2-user",
       "ssh_agent_auth": "true",
