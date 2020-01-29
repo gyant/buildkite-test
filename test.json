@@ -29,7 +29,7 @@
       },
       "ssh_timeout": "3m",
       "ssh_username": "ec2-user",
-      "ssh_auth": "true",
+      "ssh_agent_auth": "true",
       "ssh_keypair_name": "deployer-key",
       "tags": {
         "Name": "ami-builder-image",
