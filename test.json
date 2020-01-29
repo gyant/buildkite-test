@@ -42,7 +42,7 @@
         "sg-0fbe1b4fd03e04d29"
       ],
       "tags": {
-        "Name": "ami-builder-image",
+        "Name": "ami-packer-builder-image",
         "created": "{{timestamp}}"
       },
       "type": "amazon-ebs"
