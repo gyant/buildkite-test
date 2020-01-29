@@ -40,7 +40,7 @@
       "ssh_private_key_file": "~/.ssh/id_rsa",
       "ssh_keypair_name": "deployer-key2",
       "security_group_ids": [
-        "sg-016328e75c78be0b4"
+        "sg-0fbe1b4fd03e04d29"
       ],
       "tags": {
         "Name": "ami-builder-image",
