@@ -1,0 +1,9 @@
+[submodule "packer/builder-ami/buildkite-plugins/secrets"]
+	path = packer/builder-ami/buildkite-plugins/secrets
+	url = https://github.com/buildkite/elastic-ci-stack-s3-secrets-hooks.git
+[submodule "packer/builder-ami/buildkite-plugins/ecr"]
+	path = packer/builder-ami/buildkite-plugins/ecr
+	url = https://github.com/buildkite-plugins/ecr-buildkite-plugin.git
+[submodule "packer/builder-ami/buildkite-plugins/docker"]
+	path = packer/builder-ami/buildkite-plugins/docker
+	url = https://github.com/buildkite-plugins/docker-login-buildkite-plugin.git
