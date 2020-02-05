@@ -8,7 +8,7 @@
   "description": "ECS Image",
   "builders": [
     {
-      "subnet_id": "subnet-03c90e63ffce9fe33",
+      "subnet_id": "subnet-0b8c6dc5d2cc353b2",
       "security_group_id": "sg-0fbe1b4fd03e04d29",
       "ami_name": "Job Builder AMI {{timestamp}}",
       "ami_users": [],
