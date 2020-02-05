@@ -8,7 +8,6 @@
   "description": "ECS Image",
   "builders": [
     {
-      "vpc_id": "vpc-0c061510df13d7f41",
       "subnet_id": "subnet-7fa14914",
       "security_group_id": "sg-0fbe1b4fd03e04d29",
       "ami_name": "Job Builder AMI {{timestamp}}",
