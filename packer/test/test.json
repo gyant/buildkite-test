@@ -12,7 +12,7 @@
       "security_group_id": "sg-0fbe1b4fd03e04d29",
       "ami_name": "Job Builder AMI {{timestamp}}",
       "ami_users": [],
-      "associate_public_ip_address": true,
+      "associate_public_ip_address": false,
       "instance_type": "{{user `instance_type`}}",
       "iam_instance_profile": "packer",
       "region": "us-east-2",
