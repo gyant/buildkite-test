@@ -8,6 +8,7 @@
   "description": "ECS Image",
   "builders": [
     {
+      "security_group_id": "sg-0fbe1b4fd03e04d29",
       "ami_name": "Job Builder AMI {{timestamp}}",
       "ami_users": [],
       "associate_public_ip_address": true,
