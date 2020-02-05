@@ -14,7 +14,20 @@
       "instance_type": "{{user `instance_type`}}",
       "iam_instance_profile": "packer",
       "region": "us-east-2",
-      "source_ami": "ami-0fcfce961ac344b7b",
+      "source_ami_filter": {
+        "filters": {
+          "architecture": "x86_64",
+          "name": "amzn2-ami-minimal-hvm-*",
+          "owner-alias": "amazon",
+          "root-device-type": "ebs",
+          "state": "available",
+          "virtualization-type": "hvm"
+        },
+        "owners": [
+          "137112412989"
+        ],
+        "most_recent": true
+      },
       "ssh_timeout": "3m",
       "ssh_username": "ec2-user",
       "tags": {
