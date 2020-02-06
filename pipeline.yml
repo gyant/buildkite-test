@@ -5,6 +5,10 @@
 steps:
   - command: "which ansible-playbook"
   - wait
+  - command: "which ansible-playbook"
+    plugins:
+      thedyrt/change-directory#v0.1.1:
+        cd: ./packer/test
   - command: "packer build test.json"
     plugins:
       thedyrt/change-directory#v0.1.1:
