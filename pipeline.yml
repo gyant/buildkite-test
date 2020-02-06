@@ -1,5 +1,9 @@
+# steps:
+#   - command: "cd packer/test && packer build test.json"
+#   - wait
+
 steps:
-  - command: "ls -al"
-  - wait
-  - command: "cd packer/test && packer build test.json"
-  - wait
+  - command: "packer build test.json"
+    plugins:
+      thedyrt/change-directory#v0.1.1:
+        cd: ./packer/test
