@@ -9,6 +9,14 @@ steps:
     plugins:
       thedyrt/change-directory#v0.1.1:
         cd: ./packer/test
+  - wait
+  - command: "echo $PATH"
+  - wait
+  - command: "echo $PATH"
+    plugins:
+      thedyrt/change-directory#v0.1.1:
+        cd: ./packer/test
+  - wait
   - command: "packer build test.json"
     plugins:
       thedyrt/change-directory#v0.1.1:
