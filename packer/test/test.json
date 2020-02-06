@@ -45,7 +45,7 @@
       "script": "script.sh"
     },
     {
-      "type": "ansible_local",
+      "type": "ansible-local",
       "playbook_file": "playbook.yml"
     }
   ]
