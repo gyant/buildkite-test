@@ -43,6 +43,10 @@
     {
       "type": "shell",
       "script": "script.sh"
+    },
+    {
+      "type": "ansible_local",
+      "playbook_file": "playbook.yml"
     }
   ]
 }
