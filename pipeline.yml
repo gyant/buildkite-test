@@ -1,5 +1,8 @@
 steps:
   - command: "ls -al"
   - wait
-  - command: "packer build ./packer/test/test.json"
+  - command: "cd packer"
   - wait
+  - command: "ls -al"
+  # - command: "packer build ./packer/test/test.json"
+  # - wait
