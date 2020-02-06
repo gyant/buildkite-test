@@ -3,14 +3,14 @@
 #   - wait
 
 steps:
-  - command: "which ansible-playbook"
+  - command: "env"
   - wait
-  - command: "which ansible-playbook"
+  - command: "env"
     plugins:
       thedyrt/change-directory#v0.1.1:
         cd: ./packer/test
   - wait
-  - command: "cd ./packer/test && packer build test.json"
+  # - command: "cd ./packer/test && packer build test.json"
     # plugins:
     #   thedyrt/change-directory#v0.1.1:
     #     cd: ./packer/test
