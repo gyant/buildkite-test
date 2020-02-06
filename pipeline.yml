@@ -3,6 +3,8 @@
 #   - wait
 
 steps:
+  - command: "which ansible-playbook"
+  - wait
   - command: "packer build test.json"
     plugins:
       thedyrt/change-directory#v0.1.1:
