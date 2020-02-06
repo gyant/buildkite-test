@@ -10,15 +10,7 @@ steps:
       thedyrt/change-directory#v0.1.1:
         cd: ./packer/test
   - wait
-  - command: "echo $PATH"
-  - wait
-  - command: "echo $PATH"
-    plugins:
-      thedyrt/change-directory#v0.1.1:
-        cd: ./packer/test
-  - wait
-  - command: "ansible-playbook"
-    # command: "packer build test.json"
+  - command: "cd ./packer/test && packer build test.json"
     plugins:
       thedyrt/change-directory#v0.1.1:
         cd: ./packer/test
