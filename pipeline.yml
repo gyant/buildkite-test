@@ -3,14 +3,7 @@
 #   - wait
 
 steps:
-  - command: "env"
-  - wait
-  - command: "env"
+  - command: "packer build test.json"
     plugins:
       thedyrt/change-directory#v0.1.1:
         cd: ./packer/test
-  - wait
-  # - command: "cd ./packer/test && packer build test.json"
-    # plugins:
-    #   thedyrt/change-directory#v0.1.1:
-    #     cd: ./packer/test
