@@ -46,7 +46,7 @@
     },
     {
       "type": "ansible-local",
-      "playbook_file": "packer/test/playbook.yml"
+      "playbook_file": "playbook.yml"
     }
   ]
 }
