@@ -3,6 +3,8 @@
 #   - wait
 
 steps:
+  - command: "echo $PACKER_SECURITY_GROUP"
+  - wait
   - command: "packer build test.json"
     plugins:
       thedyrt/change-directory#v0.1.1:

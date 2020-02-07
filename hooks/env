@@ -1,0 +1,3 @@
+#!/bin/bash
+
+export PACKER_SECURITY_GROUP="HEYYOOOOOO"
