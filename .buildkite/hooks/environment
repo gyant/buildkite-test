@@ -2,4 +2,6 @@
 
 set -eu
 
+echo "--- :checkered_flag: Running environment"
+
 export SUP="dawg"
