@@ -3,9 +3,7 @@
 #   - wait
 
 steps:
-  - command: "echo $PACKER_SECURITY_GROUP"
-  - wait
-  - command: "packer build test.json"
+  - command: "buildkite/scripts/packer-build.sh"
     plugins:
       thedyrt/change-directory#v0.1.1:
         cd: ./packer/test
