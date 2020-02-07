@@ -1,3 +1,5 @@
 #!/bin/bash
 
-export SUP=dawg
+set -eu
+
+export SUP="dawg"
