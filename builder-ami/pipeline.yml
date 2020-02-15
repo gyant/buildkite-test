@@ -1,8 +1,9 @@
----
+# steps:
+#   - command: "cd packer/test && packer build test.json"
+#   - wait
+
 steps:
-  - label: "packer build"
-    command: "packer build test.json"
+  - command: "buildkite/scripts/packer-build.sh"
     plugins:
       thedyrt/change-directory#v0.1.1:
-        cd: ./builder-ami
-  - wait
+        cd: ./packer/test
