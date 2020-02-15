@@ -1,5 +1,6 @@
 steps:
-  - command: "packer build test.json"
+  - label: "packer build"
+    command: "packer build test.json"
     plugins:
       thedyrt/change-directory#v0.1.1:
         cd: ./builder-ami
