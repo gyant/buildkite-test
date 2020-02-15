@@ -3,7 +3,7 @@
 #   - wait
 
 steps:
-  - command: "buildkite/scripts/packer-build.sh"
+  - command: "packer build test.json"
     plugins:
       thedyrt/change-directory#v0.1.1:
         cd: ./builder-ami
